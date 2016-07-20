@@ -1,0 +1,83 @@
+@import 'https://fonts.googleapis.com/css?family=Mr+Dafoe';
+
+html, body{
+  user-select: none;
+  -moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+body {
+  background: url(https://unsplash.it/1000/1000?image=114);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+  h1 {
+    margin: 30px;
+    color: #fff;
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 40px;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0,0,0,.5);
+  }
+
+  footer {
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+  }
+  
+  .keyboard-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .keyboard {
+    display: flex;
+  }
+
+    .key-item {
+      max-width: 50px;
+      min-width: 50px;
+      height: 200px;
+      border: 1px solid #ccc;
+      line-height: 350px;
+      text-align: center;
+      background: #fff;
+    }
+
+    .key-item:hover {
+      background: #f0f0f0;
+    }
+
+
+    .key-item:nth-child(12n+2),
+    .key-item:nth-child(12n+4),
+    .key-item:nth-child(12n+7),
+    .key-item:nth-child(12n+9),
+    .key-item:nth-child(12n+11) {
+      position: relative;
+      max-width: 35px;
+      min-width: 35px;
+      height: 100px;
+      margin-left: -19px;
+      margin-right: -18px;
+      background: #000;
+      line-height: 50px;
+      color: #fff;
+    }
+
+    .key-item:nth-child(12n+2):hover,
+    .key-item:nth-child(12n+4):hover,
+    .key-item:nth-child(12n+7):hover,
+    .key-item:nth-child(12n+9):hover,
+    .key-item:nth-child(12n+11):hover {
+      background: #222;
+    }
