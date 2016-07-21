@@ -25,7 +25,7 @@ $(function() {
     }
 
     function startSound(e) {
-        stopOscillator();
+        if (mousedown) stopSound();
         mousedown = true;
         oscillator = context.createOscillator()
         oscillator.frequency.setTargetAtTime(getFreq(e), context.currentTime, 0.001);
