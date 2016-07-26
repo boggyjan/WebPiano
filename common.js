@@ -28,7 +28,8 @@ $(function() {
         if (mousedown) stopSound();
         mousedown = true;
         oscillator = context.createOscillator()
-        oscillator.frequency.setTargetAtTime(getFreq(e), context.currentTime, 0.001);
+        oscillator.type = 'sine';
+	oscillator.frequency.setTargetAtTime(getFreq(e), context.currentTime, 0.001);
         oscillator.connect(gainNode);
         oscillator.start(context.currentTime);
     }
