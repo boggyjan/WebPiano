@@ -51,6 +51,7 @@ body {
       line-height: 350px;
       text-align: center;
       background: #fff;
+      border-radius: 0 0 5px 5px;
     }
 
     .key-item:hover {
@@ -80,4 +81,8 @@ body {
     .key-item:nth-child(12n+9):hover,
     .key-item:nth-child(12n+11):hover {
       background: #222;
+    }
+
+    .key-item:nth-child(49) {
+      color: #f00;
     }
