@@ -34,11 +34,39 @@
 <body>
   <h1>Web Piano</h1>
   <div class="keyboard-container"><div class="keyboard"></div></div>
+  <div class="effect-container">
+    <div>
+      release
+      <br>
+      <input type="range" min="0" max="2000" value="50" class="release-time">
+    </div>
+    <div>
+      reverb
+      <br>
+      <input type="range" min="0" max="2000" value="400" class="reverb-time">
+    </div>
+    <div>
+      sustain
+      <br>
+      <input type="range" min="500" max="10000" value="5000" class="sustain-time">
+    </div>
+    <div>
+      tone
+      <br>
+      <select class="tone-type">
+        <option value="sine">sine</option>
+        <option value="square"> square</option>
+        <option value="sawtooth"> sawtooth</option>
+        <option value="triangle"> triangle</option>
+        <option value="custom"> custom</option><!--OscillatorNode.setPeriodicWave()-->
+      </select>
+    </div>
+  </div>
   <footer>
     <div class="copyright">Copyright © <?php echo date("Y"); ?> Boggy Jang. All rights reserved.</div>
   </footer>
   
-  <script src="http://static.boggy.tw/vendor/jquery/jquery-3.1.1.min.js"></script>
+  <script src="http://static.boggy.tw/vendor/jquery/jquery-1.11.3.min.js"></script>
   <script src="assets/js/common.js?v=<?= filemtime('assets/js/common.js'); ?>"></script>
 </body>
 </html>

@@ -52,6 +52,7 @@ body {
       text-align: center;
       background: #fff;
       border-radius: 0 0 5px 5px;
+      color: #eee;
     }
 
     .key-item:hover {
@@ -72,7 +73,7 @@ body {
       margin-right: -18px;
       background: #000;
       line-height: 50px;
-      color: #fff;
+      color: #333;
     }
 
     .key-item:nth-child(12n+2):hover,
@@ -86,3 +87,13 @@ body {
     .key-item:nth-child(49) {
       color: #f00;
     }
+
+
+.effect-container {
+  margin-top: 30px;
+}
+
+  .effect-container input,
+  .effect-container select {
+    width: 100%;
+  }
