@@ -16,6 +16,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no">
+  <meta name="google" value="notranslate">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="WebPiano">
@@ -38,12 +39,12 @@
     <div>
       release
       <br>
-      <input type="range" min="0" max="2000" value="50" class="release-time">
+      <input type="range" min="1" max="2000" value="50" class="release-time">
     </div>
     <div>
       reverb
       <br>
-      <input type="range" min="0" max="2000" value="400" class="reverb-time">
+      <input type="range" min="1" max="2000" value="400" class="reverb-time">
     </div>
     <div>
       sustain
