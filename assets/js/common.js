@@ -230,6 +230,8 @@ $(function() {
   }
 
   function startSound(e) {
+    if ($(e.target).data('acindex')) return;
+
     var freq = getFreq(e);
 
     if (freq) {
@@ -246,6 +248,7 @@ $(function() {
     if (!isNaN($(e.target).data('acindex'))) {
       $(e.target).removeClass('active');
       acData[$(e.target).data('acindex')].stopSound();
+      $(e.target).data('acindex', null);
     }
   }
 
