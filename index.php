@@ -34,40 +34,65 @@
 </head>
 <body>
   <h1>Web Piano</h1>
-  <div class="keyboard-container"><div class="keyboard"></div></div>
   <div class="effect-container">
     <div>
-      release
-      <br>
-      <input type="range" min="1" max="2000" value="50" class="release-time">
+      Attack
+      <div class="control">
+        <input data-min="0" data-max="20" value="0.01" class="attack">
+      </div>
     </div>
     <div>
-      reverb
-      <br>
-      <input type="range" min="1" max="2000" value="400" class="reverb-time">
+      Start Value
+      <div class="control">
+        <input data-min="0" data-max="2" value="0" class="startValue">
+      </div>
     </div>
     <div>
-      sustain
-      <br>
-      <input type="range" min="500" max="10000" value="5000" class="sustain-time">
+      Decay
+      <div class="control">
+        <input data-min="0" data-max="100" value="50" class="decay">
+      </div>
+    </div>
+    <div>
+      Sustain
+      <div class="control">
+        <input data-min="0" data-max="2" value="0" class="sustain">
+      </div>
+    </div>
+    <div>
+      Release
+      <div class="control">
+        <input data-min="0" data-max="10" value="1" class="release">
+      </div>
+    </div>
+    <div>
+      End Value
+      <div class="control">
+        <input data-min="0" data-max="2" value="0" class="endValue">
+      </div>
     </div>
     <div>
       tone
-      <br>
-      <select class="tone-type">
-        <option value="sine">sine</option>
-        <option value="square"> square</option>
-        <option value="sawtooth"> sawtooth</option>
-        <option value="triangle"> triangle</option>
-        <option value="custom"> custom</option><!--OscillatorNode.setPeriodicWave()-->
-      </select>
+      <div class="control">
+        <select class="tone-type">
+          <option value="sine">sine</option>
+          <option value="square"> square</option>
+          <option value="sawtooth"> sawtooth</option>
+          <option value="triangle"> triangle</option>
+          <!--<option value="custom"> custom</option>--><!--OscillatorNode.setPeriodicWave()-->
+        </select>
+      </div>
     </div>
   </div>
+  <div class="keyboard-container"><div class="keyboard"></div></div>
+
   <footer>
     <div class="copyright">Copyright © <?php echo date("Y"); ?> Boggy Jang. All rights reserved.</div>
   </footer>
   
-  <script src="http://static.boggy.tw/vendor/jquery/jquery-1.11.3.min.js"></script>
+  <script src="http://static.boggy.tw/vendor/jquery/jquery-3.1.1.min.js"></script>
+  <script src="http://static.boggy.tw/vendor/jQuery-Knob/1.2.12/jquery.knob.min.js"></script>
+
   <script src="assets/js/common.js?v=<?= filemtime('assets/js/common.js'); ?>"></script>
 </body>
 </html>

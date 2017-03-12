@@ -11,9 +11,7 @@ html, body{
 }
 
 body {
-  background: url(https://unsplash.it/1000/1000?image=114);
-  background-size: cover;
-  background-attachment: fixed;
+  background: url(../images/wood_bg.jpg) center top;
 }
 
   h1 {
@@ -28,7 +26,7 @@ body {
   }
 
   footer {
-    margin-top: 20px;
+    margin-top: 50px;
     color: #fff;
     text-align: center;
     font-size: 11px;
@@ -47,7 +45,7 @@ body {
       max-width: 50px;
       min-width: 50px;
       height: 200px;
-      border: 1px solid #ccc;
+      border: 1px solid rgba(0,0,0,.2);
       line-height: 350px;
       text-align: center;
       background: #fff;
@@ -55,7 +53,7 @@ body {
       color: #eee;
     }
 
-    .key-item:hover {
+    .key-item.active {
       background: #f0f0f0;
     }
 
@@ -76,11 +74,11 @@ body {
       color: #333;
     }
 
-    .key-item:nth-child(12n+2):hover,
-    .key-item:nth-child(12n+4):hover,
-    .key-item:nth-child(12n+7):hover,
-    .key-item:nth-child(12n+9):hover,
-    .key-item:nth-child(12n+11):hover {
+    .key-item:nth-child(12n+2).active,
+    .key-item:nth-child(12n+4).active,
+    .key-item:nth-child(12n+7).active,
+    .key-item:nth-child(12n+9).active,
+    .key-item:nth-child(12n+11).active {
       background: #222;
     }
 
@@ -91,9 +89,24 @@ body {
 
 .effect-container {
   margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #fff;
 }
 
-  .effect-container input,
-  .effect-container select {
-    width: 100%;
+  .effect-container > div {
+    max-width: 33%;
+    min-width: 120px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 12px;
   }
+
+    .effect-container .control {
+      margin-top: 10px;
+    }
+    
+      .effect-container select {
+        width: 100%;
+      }
