@@ -254,8 +254,8 @@ $(function() {
       width: 75,
       height: 75,
       lineCap: 'round',
-      thickness: .2,
-      step: 0.001,
+      thickness: .15,
+      step: 0.01,
       fgColor: 'rgba(255,255,255,.8)',
       bgColor: 'rgba(0,0,0,.75)'
     });
