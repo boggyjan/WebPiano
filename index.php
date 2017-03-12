@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="assets/css/common.css?v=<?= filemtime('assets/css/common.css'); ?>">
 </head>
 <body>
-  <h1>Web Piano</h1>
+  <h1>WebPiano</h1>
   <div class="effect-container">
     <div>
       Attack

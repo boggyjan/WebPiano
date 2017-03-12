@@ -1,6 +1,7 @@
-@import 'https://fonts.googleapis.com/css?family=Mr+Dafoe';
+/*@import 'https://fonts.googleapis.com/css?family=Mr+Dafoe';*/
+@import 'https://fonts.googleapis.com/css?family=Petit+Formal+Script';
 
-html, body{
+html, body {
   user-select: none;
   -moz-user-select: -moz-none;
   -moz-user-select: none;
@@ -11,13 +12,15 @@ html, body{
 }
 
 body {
+  margin: 0;
   background: url(../images/wood_bg.jpg) center top;
 }
 
   h1 {
     margin: 30px;
     color: #fff;
-    font-family: 'Mr Dafoe', cursive;
+    /*font-family: 'Mr Dafoe', cursive;*/
+    font-family: 'Petit Formal Script', cursive;    
     font-size: 40px;
     font-weight: normal;
     line-height: 40px;
@@ -26,10 +29,11 @@ body {
   }
 
   footer {
-    margin-top: 50px;
+    margin: 40px 0;
     color: #fff;
     text-align: center;
     font-size: 11px;
+    font-family: 'Petit Formal Script', cursive;    
   }
   
   .keyboard-container {
@@ -88,7 +92,6 @@ body {
 
 
 .effect-container {
-  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -101,6 +104,7 @@ body {
     margin-bottom: 20px;
     text-align: center;
     font-size: 12px;
+    font-family: 'Petit Formal Script', cursive;
   }
 
     .effect-container .control {
