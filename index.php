@@ -87,7 +87,7 @@
   <div class="keyboard-container"><div class="keyboard"></div></div>
 
   <footer>
-    <div class="copyright">Copyright © <?php echo date("Y"); ?> Boggy Jang. All rights reserved.</div>
+    <div class="copyright">Copyright © <?= date("Y"); ?> Boggy Jang. All rights reserved.</div>
   </footer>
   
   <script src="http://static.boggy.tw/vendor/jquery/jquery-3.1.1.min.js"></script>
