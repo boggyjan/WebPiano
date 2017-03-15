@@ -37,8 +37,9 @@ body {
   }
   
   .keyboard-container {
+    height: 210px;
     overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-y: none;
   }
 
   .keyboard {
@@ -49,6 +50,7 @@ body {
       max-width: 50px;
       min-width: 50px;
       height: 200px;
+      overflow: hidden;
       border: 1px solid rgba(0,0,0,.2);
       line-height: 350px;
       text-align: center;
@@ -58,6 +60,7 @@ body {
     }
 
     .key-item.active {
+      height: 203px;
       background: #f0f0f0;
     }
 
@@ -83,11 +86,12 @@ body {
     .key-item:nth-child(12n+7).active,
     .key-item:nth-child(12n+9).active,
     .key-item:nth-child(12n+11).active {
+      height: 103px;
       background: #222;
     }
 
     .key-item:nth-child(49) {
-      color: #f00;
+      color: #c33;
     }
 
 
@@ -110,7 +114,26 @@ body {
     .effect-container .control {
       margin-top: 10px;
     }
-    
-      .effect-container select {
-        width: 100%;
+
+      .effect-container  .tone-type {
+        width: 100px;
+        height: 25px;
+        padding: 0 5px;
+        margin-top: 20px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: 0;
+        border-radius: 4px;
+        background: rgba(0,0,0,.75) url(../images/dropdown_arrow.png) no-repeat right center / auto 80%;
+        color: #fff;
+        font-size: 13px;
       }
+
+/*---- xs ----*/
+@media screen and (max-width: 767px) {
+  .effect-container  .tone-type {
+    width: 100%;
+    margin-top: 0;
+  }
+}
