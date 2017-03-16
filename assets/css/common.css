@@ -37,9 +37,9 @@ body {
   }
   
   .keyboard-container {
-    height: 210px;
+    height: 250px;
     overflow-x: scroll;
-    overflow-y: none;
+    overflow-y: hidden;
   }
 
   .keyboard {
