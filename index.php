@@ -76,10 +76,10 @@
       <div class="control">
         <select class="tone-type">
           <option value="sine">sine</option>
-          <option value="square"> square</option>
-          <option value="sawtooth"> sawtooth</option>
-          <option value="triangle"> triangle</option>
-          <!--<option value="custom"> custom</option>--><!--OscillatorNode.setPeriodicWave()-->
+          <option value="square">square</option>
+          <option value="sawtooth">sawtooth</option>
+          <option value="triangle">triangle</option>
+          <!--<option value="custom">custom</option>--><!--OscillatorNode.setPeriodicWave()-->
         </select>
       </div>
     </div>
@@ -90,8 +90,8 @@
     <div class="copyright">Copyright © <?= date("Y"); ?> Boggy Jang. All rights reserved.</div>
   </footer>
   
-  <script src="http://static.boggy.tw/vendor/jquery/jquery-3.1.1.min.js"></script>
-  <script src="http://static.boggy.tw/vendor/jQuery-Knob/1.2.12/jquery.knob.min.js"></script>
+  <script src="//static.boggy.tw/vendor/jquery/jquery-3.1.1.min.js"></script>
+  <script src="//static.boggy.tw/vendor/jQuery-Knob/1.2.12/jquery.knob.min.js"></script>
 
   <script src="assets/js/common.js?v=<?= filemtime('assets/js/common.js'); ?>"></script>
 </body>
